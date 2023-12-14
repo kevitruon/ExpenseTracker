@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from receipts.models import Receipt
+from receipts.models import Receipt, ExpenseCategory, Account
 from django.contrib.auth.decorators import login_required
 from receipts.forms import ReceiptForm, CategoryForm, AccountForm
 

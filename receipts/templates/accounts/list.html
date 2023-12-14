@@ -7,19 +7,21 @@
   </head>
   <body>
     <main>
-      <h1>My Categories</h1>
+      <h1>My Accounts</h1>
       <table>
         <thead>
           <tr>
             <th>Name</th>
+            <th>Number</th>
             <th>Number of receipts</th>
           </tr>
         </thead>
         <tbody>
-          {% for category in categories %}
+          {% for account in accounts %}
           <tr>
-            <td>{{ category.name }}</td>
-            <td>{{ category.receipts.all|length }}</td>
+            <td>{{ account.name }}</td>
+            <td>{{ account.number }}</td>
+            <td>{{ account.receipts.all|length }}</td>
           </tr>
           {% endfor %}
         </tbody>
